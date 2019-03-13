@@ -1,0 +1,30 @@
+{
+  "name": "e-commerce-backend",
+  "version": "0.1.0",
+  "description": "E Commerce app Back End Service written in Node and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Akshay Gulhane",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "mocha": "^5.2.0",
+    "mysql": "^2.16.0",
+    "nock": "^10.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "mocha": "^5.2.0"
+  }
+}
