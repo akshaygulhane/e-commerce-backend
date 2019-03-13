@@ -1,5 +1,4 @@
 const express = require('express');
-const passport = require('passport');
 
 const config = require('./src/helpers/config');
 const logger = require('./src/helpers/logger');
@@ -19,9 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
-
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
